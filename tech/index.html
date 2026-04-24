@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Stack — Totalbet Digital</title>
+  <meta name="description" content="The modern technology stack powering Totalbet Digital's mobile sports applications — Flutter, Kotlin, Swift, Cloudflare and more." />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a0a0a'/><text y='22' x='4' font-size='18' fill='%23c8f135' font-family='serif'>T</text></svg>" />
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="/" class="logo">Totalbet <span>Digital</span></a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="fullscreen-menu" role="dialog" aria-label="Navigation menu">
+  <ul class="menu-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/solutions">Our Solutions</a></li>
+    <li><a href="/tech">Tech Stack</a></li>
+    <li><a href="/careers">Careers</a></li>
+    <li><a href="/media">Media Kit</a></li>
+    <li><a href="/contacts">Contact</a></li>
+    <li><a href="/policy">Privacy Policy</a></li>
+  </ul>
+  <div class="menu-footer">© 2026 Totalbet Digital</div>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="section-eyebrow fade-up">Engineering</span>
+    <h1 class="fade-up">Technology built<br/>for scale and speed</h1>
+    <p class="fade-up">We choose our tools deliberately. Every technology in our stack was selected because it gives us a meaningful advantage in building fast, reliable, and beautiful mobile products.</p>
+  </div>
+</div>
+
+<!-- MOBILE -->
+<section>
+  <div class="container">
+    <span class="section-eyebrow fade-up">Mobile Development</span>
+    <h2 class="section-title fade-up">Cross-platform and native, done right</h2>
+    <p class="section-sub fade-up" style="margin-bottom:0;">We build mobile products that feel native on every platform. Our approach combines the development efficiency of Flutter with the platform-specific power of Kotlin and Swift where it matters most.</p>
+
+    <div class="tech-grid" style="margin-top:56px;">
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Fl</div>
+        <h4>Flutter</h4>
+        <p>Our primary cross-platform framework. A single Dart codebase delivers pixel-perfect UIs on Android and iOS, dramatically accelerating our feature velocity without sacrificing performance.</p>
+      </div>
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Kt</div>
+        <h4>Kotlin</h4>
+        <p>For Android-specific integrations, background services, and performance-critical modules, we drop into native Kotlin. Modern, expressive, and the language Google officially recommends for Android.</p>
+      </div>
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Sw</div>
+        <h4>Swift</h4>
+        <p>Native iOS development in Swift handles platform-specific features like WidgetKit, Live Activities, and deep system integrations that require the full power of Apple's ecosystem.</p>
+      </div>
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Dp</div>
+        <h4>Dart / Pub</h4>
+        <p>The language behind Flutter. Dart's strong typing and ahead-of-time compilation give us confidence in our code and performance our users can feel in every interaction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACKEND & INFRA -->
+<section style="background: var(--mid);">
+  <div class="container">
+    <span class="section-eyebrow fade-up">Backend & Infrastructure</span>
+    <h2 class="section-title fade-up">Built for real-time, designed for edge</h2>
+    <p class="section-sub fade-up" style="margin-bottom:0;">Sports data is live data. Our backend architecture is designed to ingest, process and serve high-frequency event streams with minimal latency — wherever our users are in the world.</p>
+
+    <div class="tech-grid" style="margin-top:56px;">
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Cf</div>
+        <h4>Cloudflare</h4>
+        <p>The backbone of our global content delivery and security layer. Cloudflare Workers power our edge compute, while Workers KV and Durable Objects handle real-time state without cold starts.</p>
+      </div>
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Nd</div>
+        <h4>Node.js / Bun</h4>
+        <p>Our primary API runtime for event-driven services. The non-blocking I/O model is ideal for our WebSocket-heavy live data pipelines and real-time notification infrastructure.</p>
+      </div>
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Pg</div>
+        <h4>PostgreSQL</h4>
+        <p>The relational foundation for structured sports data, user profiles and application state. We use logical replication and read replicas to ensure query performance at scale.</p>
+      </div>
+      <div class="tech-item fade-up">
+        <div class="tech-logo">Rd</div>
+        <h4>Redis</h4>
+        <p>In-memory caching for live match data, session state and rate limiting. Redis Streams power our internal event bus, connecting data ingestion with downstream services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA & ANALYTICS -->
+<section>
+  <div class="container">
+    <span class="section-eyebrow fade-up">Data & Analytics</span>
+    <h2 class="section-title fade-up">Turning raw data into fan intelligence</h2>
+    <div class="cards-grid" style="margin-top:56px;">
+      <div class="card fade-up">
+        <h3>Data Ingestion</h3>
+        <p>We integrate with multiple professional sports data providers via REST and WebSocket APIs, normalising heterogeneous data schemas into a unified internal format in real time.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Processing Pipeline</h3>
+        <p>Stream processing via Cloudflare Queues and custom workers handles event enrichment, aggregation and fan-facing statistic computation with sub-second end-to-end latency targets.</p>
+      </div>
+      <div class="card fade-up">
+        <h3>Personalisation Engine</h3>
+        <p>A lightweight recommendation layer uses collaborative filtering and content signals to rank news articles, surface relevant statistics and time push notifications for maximum engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section style="background: var(--mid); padding: 100px 0;">
+  <div class="container">
+    <span class="section-eyebrow fade-up">Engineering Culture</span>
+    <h2 class="section-title fade-up">How we build</h2>
+    <div class="two-col" style="margin-top:56px; align-items:flex-start;">
+      <div style="display:flex; flex-direction:column; gap:2px;" class="fade-up">
+        <div class="info-block" style="background:var(--black);">
+          <h4>Continuous Delivery</h4>
+          <p>We ship to production multiple times per week. Automated CI/CD pipelines with comprehensive test coverage give us the confidence to move fast without breaking things.</p>
+        </div>
+        <div class="info-block" style="background:var(--black);">
+          <h4>Observability First</h4>
+          <p>Every service is instrumented with structured logging, distributed tracing and custom metrics. We know about problems before our users do.</p>
+        </div>
+        <div class="info-block" style="background:var(--black);">
+          <h4>Security by Design</h4>
+          <p>OWASP principles inform every architecture decision. Data is encrypted at rest and in transit. Secrets are managed via environment isolation, never hardcoded.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:2px;" class="fade-up">
+        <div class="info-block" style="background:var(--black);">
+          <h4>API-First Architecture</h4>
+          <p>All product surfaces consume the same versioned internal APIs. This ensures consistency and means adding a new platform (web, tablet, TV) requires zero backend changes.</p>
+        </div>
+        <div class="info-block" style="background:var(--black);">
+          <h4>Offline-Capable Apps</h4>
+          <p>We architect for connectivity gaps. Optimistic UI updates, local caching and graceful degradation mean our apps deliver value even in poor network conditions.</p>
+        </div>
+        <div class="info-block" style="background:var(--black);">
+          <h4>Accessibility Standards</h4>
+          <p>WCAG 2.1 AA compliance is a baseline requirement. Every feature is tested with screen readers and meets contrast ratio standards across all supported OS themes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>Legal Entity</h5>
+        <div class="company-name">TOTALBET ZAKŁADY BUKMACHERSKIE SP Z O O</div>
+        <address>Ul. Jubilerska 10<br/>04-190 Warszawa<br/>Poland</address>
+        <p style="margin-top:12px; font-size:0.75rem; color:var(--text-dim);">Operating under the digital media division of TOTALBET Zakłady Bukmacherskie Sp. z o.o.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li><li><a href="/about">About Us</a></li>
+          <li><a href="/solutions">Our Solutions</a></li><li><a href="/tech">Tech Stack</a></li>
+          <li><a href="/careers">Careers</a></li><li><a href="/media">Media Kit</a></li>
+          <li><a href="/contacts">Contact</a></li><li><a href="/policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact"><p><a href="mailto:support@totalbet-apps.com">support@totalbet-apps.com</a></p></div>
+        <p style="margin-top:24px; font-size:0.78rem; color:var(--text-dim);">© 2026 Totalbet Digital. All rights reserved.</p>
+        <p style="margin-top:8px; font-size:0.72rem; color:var(--text-dim);">A digital media division of TOTALBET Zakłady Bukmacherskie Sp. z o.o.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Totalbet Digital — Sports Media & Technology</p>
+      <p>Built with care for fans worldwide.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
